@@ -1,15 +1,46 @@
 void getimage(){
-  int i;
-  int t;
-  int f = 0;
+  int tmp = i / 3;
   
-  for(t = 0;t <= 128;t += 32){
-    for(i = 0;i <= 72;i += 24){
-      tmp = get(i,t,i+24,t+32);
-      plwalk[f] = tmp;
-      f++;
-    }
+  if(i%3 == 0){
+    x = 0;
+    y += 32;
+  }
+  PImage tmpo = new PImage();
+  
+  image(walk,0,0);
+  
+  switch(tmp){
+    case 0:
+      tmpo = get(x,y,24,32);
+      x += 24;
+      tmpo = Transmission(tmpo);
+      walk_back.add(tmpo);
+      break;
+    case 1:
+      tmpo = get(x,y,24,32);
+      x += 24;
+      tmpo = Transmission(tmpo);
+      walk_right.add(tmpo);
+      break;
+    case 2:  
+      tmpo = get(x,y,24,32);
+      x += 24;
+      tmpo = Transmission(tmpo);
+      walk_front.add(tmpo);
+      break;
+    case 3:
+      tmpo = get(x,y,24,32);
+      x += 24;
+      tmpo = Transmission(tmpo);
+      walk_left.add(tmpo);
+      break;
+  }
+  
+  i++;
+  
+  if(i < 12){
+    background(0);
+    getimage();
   }
   
 }
-      

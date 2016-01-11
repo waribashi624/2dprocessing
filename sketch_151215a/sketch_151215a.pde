@@ -1,21 +1,27 @@
-PImage player = new PImage();
-PImage wall = new PImage();
-PImage ground = new PImage();
-boolean keyclass;
-PImage tmp = new PImage();
-PImage now = new PImage();
-PImage[] plwalk = new PImage[12];
-keyboard kb = new keyboard();
-
-JSONObject jobj = new JSONObject();
-
 void setup(){
+  
+  //JSON LOAD
+  LOADJSON();
+    
+  //Window Setup
   size(1280,720);
   noStroke();
   rectMode(CORNER);
+  frameRate(10);
+  
+  //imageload
+  nan = loadImage("pl.png");
+  bg = loadImage("elixir.jpg");
   wall = loadImage("wall.jpg");
   ground = loadImage("ground.jpg");
-  player = loadImage("pl.png");
-  image(player,0,0);
+  walk = loadImage("pl.png");
+  image(walk,0,0);
+  
+  //background
+  background = walk.get(0,0);
+  i = 0;
   getimage();
+  neutral = walk_front.get(0);
+  
+  PL = new Player();
 }

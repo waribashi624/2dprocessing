@@ -1,4 +1,5 @@
 void keyPressed(){
-  keyclass = true;
-  kb.input_vector(keyclass);
+  println("Pressed");
+  keybool = true;
+  kb.input_vector(key,keybool);
 }

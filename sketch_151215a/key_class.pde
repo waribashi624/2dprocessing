@@ -1,12 +1,14 @@
 public class keyboard{
   private boolean a,w,s,d;
   
-  public void input_vector(boolean flag){
-    switch(key){
+  public void input_vector(char code,boolean flag){
+    switch(code){
       case 'a':
       if(flag){
+        println("A Pressed");
         this.a = true;
       }else{
+        println("A Released");
         this.a = false;
       }
       break;
@@ -37,7 +39,7 @@ public class keyboard{
     }
   }
   
-  public void keyboard(){
+  keyboard(){
     a = w = s = d = false;
   }
   
