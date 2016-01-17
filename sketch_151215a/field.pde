@@ -19,7 +19,7 @@ int psizeY = 32*(int)2.5;
 boolean keybool;
 
 //MAP
-int MAP_a[] = new int[20];
+int MAP_array[][] = new int[15][20];
 ArrayList<int[]> MAP_data = new ArrayList<int[]>();
 
 //color

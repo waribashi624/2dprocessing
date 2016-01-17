@@ -1,6 +1,6 @@
 void draw(){
   PImage temp = new PImage();
-  background(255,0,0,0);
+  background(background);
   //colorMode(RGB,256);
   /*widtd/16,height/9*/
  /* for(i = 0;i < 17;i++){

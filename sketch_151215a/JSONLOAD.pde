@@ -13,8 +13,8 @@ void LOADJSON(){
   for(n=0;n < MAP_TOP.size();n++){
     MAP.add(MAP_TOP.getJSONArray(n));
     for(N = 0;N < MAP.get(n).size();N++){
-      MAP_a[N] = MAP.get(n).getInt(N);
-      println(MAP_a[N]);
+      MAP_array[n][N] = MAP.get(n).getInt(N);
+      println(MAP_array[n][N]);
     }
   }
   

@@ -13,25 +13,25 @@ void getimage(){
     case 0:
       tmpo = get(x,y,24,32);
       x += 24;
-      tmpo = Transmission(tmpo);
+      
       walk_back.add(tmpo);
       break;
     case 1:
       tmpo = get(x,y,24,32);
       x += 24;
-      tmpo = Transmission(tmpo);
+      
       walk_right.add(tmpo);
       break;
     case 2:  
       tmpo = get(x,y,24,32);
       x += 24;
-      tmpo = Transmission(tmpo);
+      
       walk_front.add(tmpo);
       break;
     case 3:
       tmpo = get(x,y,24,32);
       x += 24;
-      tmpo = Transmission(tmpo);
+      
       walk_left.add(tmpo);
       break;
   }
