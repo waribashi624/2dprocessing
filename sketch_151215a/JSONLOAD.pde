@@ -16,7 +16,5 @@ void LOADJSON(){
       MAP_array[n][N] = MAP.get(n).getInt(N);
       println(MAP_array[n][N]);
     }
-  }
-  
-  
+  } 
 }

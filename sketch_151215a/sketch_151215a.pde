@@ -4,7 +4,7 @@ void setup(){
   LOADJSON();
     
   //Window Setup
-  size(1280,720);
+  size(800,600);
   noStroke();
   rectMode(CORNER);
   frameRate(10);

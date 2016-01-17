@@ -22,4 +22,5 @@ void draw(){
   i++;
   
   PL.move();
+  dispmap();
 }
