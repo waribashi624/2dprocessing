@@ -2,7 +2,7 @@
   *player class is status of a player's charactor
   */
 public class Player{
-  private int X,Y;
+  private int X,Y,count;
   private int HP,AP,SP;
   private int i;
   private boolean flag;
@@ -37,20 +37,30 @@ public class Player{
     if(i % 3 == 0)i = 0;
     flag = false;
     
+    this.Y = (int)jamp(this.X,this.Y);
+    
     if(kb.a){
-      PL.X -= 10;
-      temp = walk_left.get(i);
-      image(temp,X,Y,psizeX,psizeY);
-      flag = true;
+      this.X -= 10;
+      if(collision(PL.X,PL.Y)){
+        temp = walk_left.get(i);
+        image(temp,this.X,this.Y,psizeX,psizeY);
+        flag = true;
+      }else{
+        PL.X += 10;
+      }
     } if(kb.d){
       PL.X += 10;
-      temp = walk_right.get(i);
-      image(temp,X,Y,psizeX,psizeY);
-      flag = true;
+      if(collision(PL.X,PL.Y)){
+        temp = walk_right.get(i);
+        image(temp,this.X,this.Y,psizeX,psizeY);
+        flag = true;
+      }else{
+        PL.X -= 10;
+      }
     }
     
     if(!flag){
-      image(neutral,X,Y,psizeX,psizeY);
+      image(neutral,this.X,this.Y,psizeX,psizeY);
     }
     i++;
   }

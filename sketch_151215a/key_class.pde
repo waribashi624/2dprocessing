@@ -1,14 +1,24 @@
 public class keyboard{
-  private boolean a,w,s,d;
+  private boolean a,w,s,d,space;
   
   public void input_vector(char code,boolean flag){
     switch(code){
+      case ' ':
+      if(flag){
+        //println("space Pressed");
+        this.space = true;
+      }else{
+        //println("space Released");
+        this.space = false;
+      }
+      break;
+      
       case 'a':
       if(flag){
-        println("A Pressed");
+        //println("A Pressed");
         this.a = true;
       }else{
-        println("A Released");
+        //println("A Released");
         this.a = false;
       }
       break;

@@ -12,8 +12,8 @@ ArrayList<PImage> walk_left = new ArrayList<PImage>();
 ArrayList<PImage> walk_back = new ArrayList<PImage>();
 
 //player size
-int psizeX = 24*(int)2.5;
-int psizeY = 32*(int)2.5;
+int psizeX = 24*(int)2.5; //half = 30;
+int psizeY = 32*(int)2.5; //half = 40;
 
 //boolean
 boolean keybool;
@@ -33,6 +33,7 @@ ArrayList<JSONArray> MAP = new ArrayList<JSONArray>();
 //Temporary
 int t = 0,i = 0;
 int x = 0,y = -32;
+int power = -10;
 
 //self class
 keyboard kb = new keyboard();

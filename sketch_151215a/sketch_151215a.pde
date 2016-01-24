@@ -7,7 +7,7 @@ void setup(){
   size(800,600);
   noStroke();
   rectMode(CORNER);
-  frameRate(10);
+  frameRate(15);
   
   //imageload
   nan = loadImage("pl.png");
@@ -24,4 +24,11 @@ void setup(){
   neutral = walk_front.get(0);
   
   PL = new Player();
+  
+  for(i = 0;i < 15;i++){
+    for(t = 0;t < 20;t++){
+      println(MAP_array[i][t]);
+    }
+    println("\n");
+  }
 }
