@@ -22,5 +22,5 @@
 >透過した画像を使用したが，画像を分割することにより，透過されなくなってしまうことが判明した．<br>
 
 ##プログラムリスト
->プログラムリストについては[以下のリンク](https://github.com/waribashi624/2dprocessing)を参照されたし．
+>プログラムリストについては[以下のリンク](https://github.com/waribashi624/2dprocessing/tree/issue1/sketch_151215a)を参照されたし．
 
