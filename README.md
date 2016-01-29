@@ -15,6 +15,8 @@
 |SPACE|jamp|
 
 ##動作画面
+![image1](./image1.png)
+![image2](https://github.com/waribashi624/2dprocessing/image2.png)
 
 ##工夫した点
 >マップの読み込みをJSONファイルから読み込むことで，ステージの変更を容易にした．<br>
